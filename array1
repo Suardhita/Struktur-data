@@ -1,0 +1,277 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNQNyWcLl7v6kNrwNLbxjgK",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Suardhita/Struktur-data/blob/main/array1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Menggunakan numpy di python untuk mendefinisikan array"
+      ],
+      "metadata": {
+        "id": "3S4sd0jIAYxR"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 28,
+      "metadata": {
+        "id": "irvs4DZr_Aom"
+      },
+      "outputs": [],
+      "source": [
+        "import numpy as np\n",
+        "\n",
+        "ar1 = np.array( [30, 60, 80, 65, 70] )\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Tampilkan Array"
+      ],
+      "metadata": {
+        "id": "fJX8Lv8r_1SB"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print( ar1 )"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Oq4qWjK__58i",
+        "outputId": "88ec3671-d209-4c1c-a9fd-3a59cb7e5fb4"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[30 60 80 65 70]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Menampilkan isi data array dari index tertentu"
+      ],
+      "metadata": {
+        "id": "ILTSP-DxB4cI"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "angka = ar1[1]\n",
+        "print(angka)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vxMmxKYJB8cQ",
+        "outputId": "1fc2f785-1688-46e5-8c49-39e960a463b8"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "60\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Fungsi statistik MIN, MAX, MEAN"
+      ],
+      "metadata": {
+        "id": "5R4DpeTYCvsB"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nkecil = np.min(ar1)\n",
+        "print(\"Nilai Terkecil : \")\n",
+        "print(nkecil)\n",
+        "\n",
+        "nbesar = np.max(ar1)\n",
+        "print(\"Nilai Terbesar : \")\n",
+        "print(nbesar)\n",
+        "\n",
+        "nrata = np.mean(ar1)\n",
+        "print(\"Nilai Rata-Rata : \")\n",
+        "print(nrata)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tKBD3z0BC2hf",
+        "outputId": "3e323aa2-dd05-4cce-9115-b6c4e410ebdc"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Nilai Terkecil : \n",
+            "30\n",
+            "Nilai Terbesar : \n",
+            "80\n",
+            "Nilai Rata-Rata : \n",
+            "61.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "array 2 dimensi atau lebih"
+      ],
+      "metadata": {
+        "id": "mNBeWYGmFbPp"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ar2 = np.array([\n",
+        "    [30, 31, 32, 33],\n",
+        "    [40, 41, 42, 42] ])"
+      ],
+      "metadata": {
+        "id": "W4bjsg5jFZTR"
+      },
+      "execution_count": 27,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Tampilkan isi array"
+      ],
+      "metadata": {
+        "id": "ukOfQuCZF6hO"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(ar2)\n",
+        "ank = ar2[0,2]\n",
+        "print(ank)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HKdvn3BqGFaR",
+        "outputId": "9b646cd1-eecf-4b50-e9ee-731122431820"
+      },
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[30 31 32 33]\n",
+            " [40 41 42 42]]\n",
+            "32\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ar3 = np.array([\n",
+        "    [\n",
+        "        [3, 4, 6],\n",
+        "        [1, 7, 5],\n",
+        "        [9, 0, 11]\n",
+        "    ],\n",
+        "    [\n",
+        "        [13, 14, 16],\n",
+        "        [11, 17, 15],\n",
+        "        [19, 10, 13]\n",
+        "    ]\n",
+        "])"
+      ],
+      "metadata": {
+        "id": "kNHs1kpGIIcY"
+      },
+      "execution_count": 39,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ank = ar3[0,1,2]\n",
+        "print(ank)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jxEwCJGeIoT9",
+        "outputId": "9f7a520e-cc9b-422b-f9da-40e2e22c1953"
+      },
+      "execution_count": 40,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "-mWsIPuuIwkt"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
